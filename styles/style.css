@@ -1,1 +1,120 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.main {
+  background-color: white;
+  width: 100vw;
+}
+
+.main .navbar {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 20px 30px;
+  width: 375px;
+}
+
+.main .navbar #hamburger-icon {
+  color: #9e9aa7;
+  font-size: 25px;
+}
+
+.main .navbar #hamburger-icon:hover {
+  cursor: pointer;
+}
+
+.main .hero-container {
+  text-align: center;
+  position: relative;
+  width: 375px;
+}
+
+.main .hero-container #hero-image {
+  position: relative;
+  left: 25px;
+  height: 300px;
+  width: 450px;
+}
+
+.main .hero-container #hero-heading {
+  font-size: 2rem;
+  margin-top: 10px;
+  padding: 0px 25px;
+}
+
+.main .hero-container #hero-body {
+  font-size: 18px;
+  margin-top: 10px;
+  padding: 0px 25px;
+}
+
+.main .api-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #3b3054;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 75px;
+  padding: 20px;
+  width: 350px;
+}
+
+.main .api-container .url-input-container {
+  background-color: white;
+  padding: 5px;
+  width: 100%;
+}
+
+.main .api-container .url-input-container .url-input {
+  border: none;
+  color: #9e9aa7;
+  outline: none;
+}
+
+.heading {
+  color: #35323e;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.body {
+  color: #9e9aa7;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+#get-started-button {
+  background-color: #2acfcf;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  padding: 10px 60px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -6,3 +6,107 @@
     margin: 0px;
     padding: 0px;
 }
+
+.main
+{
+    background-color: $whiteColor;
+    width: 100vw;
+    .navbar
+    {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 20px 30px;
+        width: 375px;
+        #hamburger-icon
+        {
+            color: $textColor;
+            font-size: 25px;
+            &:hover
+            {
+                cursor: pointer;
+            }
+        }
+    }
+    .hero-container
+    {
+        text-align: center;
+        position: relative; 
+        width: 375px;
+        #hero-image
+        {
+            position: relative;
+            left: 25px;
+            height: 300px;
+            width: 450px;
+        }
+        #hero-heading
+        {
+            font-size: 2rem;
+            margin-top: 10px;
+            padding: 0px 25px;
+        }
+        #hero-body
+        {
+            font-size: $fontSize;
+            margin-top: 10px;
+            padding: 0px 25px;
+        }
+    }
+    .api-container
+    {
+        align-items: center;
+        background-color: $containerColor;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 75px;
+        padding: 20px;
+        width: 350px;
+        .url-input-container
+        {
+            background-color: $whiteColor;
+            padding: 5px;
+            width: 100%;
+            .url-input
+            {
+                border: none;
+                color: $textColor;
+                outline: none;
+            }
+        }
+    }
+}
+
+.heading
+{
+    color: $headingColor;
+    font-family: $fontFamily;
+    font-weight: $fontWeight2;
+}
+
+.body
+{
+    color: $textColor;
+    font-family: $fontFamily;
+    font-weight: $fontWeight1;
+}
+
+#get-started-button
+{
+    background-color: $buttonColor;
+    border: none;
+    border-radius: 20px;
+    color: $whiteColor;
+    cursor: pointer;
+    display: block;
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    font-weight: $fontWeight2;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 10px 60px;
+}
