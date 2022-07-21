@@ -10,6 +10,7 @@
 .main
 {
     background-color: $whiteColor;
+    position: relative;
     width: 100vw;
     .navbar
     {
@@ -31,6 +32,7 @@
     .hero-container
     {
         text-align: center;
+        margin-bottom: 125px;
         position: relative; 
         width: 375px;
         #hero-image
@@ -43,7 +45,6 @@
         #hero-heading
         {
             font-size: 2rem;
-            margin-top: 10px;
             padding: 0px 25px;
         }
         #hero-body
@@ -53,28 +54,136 @@
             padding: 0px 25px;
         }
     }
-    .api-container
+    .advanced-stats
     {
-        align-items: center;
-        background-color: $containerColor;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 75px;
-        padding: 20px;
-        width: 350px;
-        .url-input-container
+        background-color: $apiColor;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        .api-container
+        {
+            align-items: center;
+            background-color: $containerColor;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            position: relative;
+            top: -70px;
+            width: 350px;
+            .url-input-container
+            {
+                align-items: center;
+                background-color: $whiteColor;
+                border-radius: 5px;
+                display: flex;
+                padding: 5px;
+                height: 40px;
+                width: 100%;
+                .url-input
+                {
+                    border: none;
+                    color: $textColor;
+                    font-family: $fontFamily;
+                    padding-left: 10px;
+                    outline: none;
+                    &::placeholder
+                    {
+                        color: $textColor;
+                    }
+                }
+            }
+        }
+        #stats-heading
+        {
+            font-size: 1.75rem;
+        }
+        #stats-body
+        {
+            font-size: $fontSize;
+            margin-top: 10px;
+        }
+        .stat-container
         {
             background-color: $whiteColor;
-            padding: 5px;
-            width: 100%;
-            .url-input
+            border-radius: 5px;
+            height: 275px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            padding-left: 15px;
+            padding-right: 15px;
+            position: relative;
+            text-align: center;
+            width: 350px;
+            .image-container
             {
-                border: none;
-                color: $textColor;
-                outline: none;
+                align-items: center;
+                background-color: $containerColor;
+                border-radius: 50%;
+                display: flex;
+                height: fit-content;
+                justify-content: center;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 20px 20px;
+                position: relative;
+                top: -35px;
+                width: fit-content;
+            }
+            #stat-heading
+            {
+                font-size: 1.5rem;
+            }
+            #stat-body
+            {
+                font-size: $fontSize;
+                margin-top: 20px;
+            }
+        }
+    }
+    .announcement
+    {
+        background-color: $containerColor;
+        padding-bottom: 50px;
+        padding-top: 50px;
+        text-align: center;
+        width: 100%;
+        #announcement-heading
+        {
+            color: $whiteColor;
+            font-size: 1.5rem;
+        }
+    }
+    .footer
+    {
+        background-color: $footerColor;
+        color: $whiteColor;
+        text-align: center;
+        padding: 50px 0px;
+        width: 100%;
+        .logo
+        {
+            margin-bottom: 10px;
+        }
+        .footer-list
+        {
+            font-family: $fontFamily;
+            font-size: $fontSize;
+            font-weight: $fontWeight2;
+            margin-top: 25px;
+            .footer-item
+            {
+                cursor: pointer;
+                font-size: 14px;
+                font-weight: $fontWeight1 ;
+                margin-top: 5px;
+            }
+            #item-1
+            {
+                margin-top: 15px !important;
             }
         }
     }
@@ -83,6 +192,7 @@
 .heading
 {
     color: $headingColor;
+    display:block;
     font-family: $fontFamily;
     font-weight: $fontWeight2;
 }
@@ -90,6 +200,7 @@
 .body
 {
     color: $textColor;
+    display: block;
     font-family: $fontFamily;
     font-weight: $fontWeight1;
 }
@@ -109,4 +220,49 @@
     margin-right: auto;
     margin-top: 20px;
     padding: 10px 60px;
+}
+
+#shorten-button
+{
+    background-color: $buttonColor;
+    border: none;
+    border-radius: 5px;
+    color: $whiteColor;
+    cursor: pointer;
+    display: block;
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    font-weight: $fontWeight2;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    height: 40px;
+    width: 100%;
+}
+
+.line
+{
+    background-color: $buttonColor;
+    display: inline-block;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 10px;
+}
+
+#container-2
+{
+    position: relative;
+    top: -25px;
+}
+
+#line-2
+{
+    top: -25px;
+}
+
+#container-3
+{
+    top: -50px;
 }
