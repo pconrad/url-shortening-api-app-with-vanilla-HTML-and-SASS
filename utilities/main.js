@@ -23,3 +23,10 @@ const toggleClose = () =>
     mobileHero.style.display = "block";
     mobileNavContainer.style.display = "none";
 }
+
+const urlInput = document.getElementById("url");
+
+const shortenUrl = () =>
+{
+    const urlString = urlInput.value;
+}

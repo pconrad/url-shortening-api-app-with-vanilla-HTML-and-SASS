@@ -15,29 +15,35 @@
     width: 100vw;
     .navbar
     {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-        padding: 30px 20px 30px;
-        width: 375px;
-        #hamburger-icon-open
+        width: 100%;
+        .navbar-container
         {
-            color: $textColor;
-            display: block;
-            font-size: 25px;
-            &:hover
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 30px 20px 30px;
+            width: 375px;
+            #hamburger-icon-open
             {
-                cursor: pointer;
+                color: $textColor;
+                display: block;
+                font-size: 25px;
+                &:hover
+                {
+                    cursor: pointer;
+                }
             }
-        }
-        #hamburger-icon-close
-        {
-            color: $textColor;
-            display: none;
-            font-size: 25px;
-            &:hover
+            #hamburger-icon-close
             {
-                cursor: pointer;
+                color: $textColor;
+                display: none;
+                font-size: 25px;
+                &:hover
+                {
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -46,7 +52,7 @@
         text-align: center;
         margin-bottom: 125px;
         position: relative; 
-        width: 375px;
+        width: 100%;
         .mobile-container
         {
             background-color: $containerColor;
@@ -99,6 +105,8 @@
             display: block;
             position: relative;
             left: 25px;
+            margin-left: auto;
+            margin-right: auto;
             height: 300px;
             width: 450px;
         }
