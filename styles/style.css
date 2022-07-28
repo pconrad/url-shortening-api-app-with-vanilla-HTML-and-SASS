@@ -8,6 +8,7 @@
 .main {
   background-color: white;
   position: relative;
+  overflow-x: hidden;
   width: 100vw;
 }
 
@@ -25,12 +26,23 @@
   width: 375px;
 }
 
-.main .navbar #hamburger-icon {
+.main .navbar #hamburger-icon-open {
   color: #9e9aa7;
+  display: block;
   font-size: 25px;
 }
 
-.main .navbar #hamburger-icon:hover {
+.main .navbar #hamburger-icon-open:hover {
+  cursor: pointer;
+}
+
+.main .navbar #hamburger-icon-close {
+  color: #9e9aa7;
+  display: none;
+  font-size: 25px;
+}
+
+.main .navbar #hamburger-icon-close:hover {
   cursor: pointer;
 }
 
@@ -41,7 +53,55 @@
   width: 375px;
 }
 
+.main .hero-container .mobile-container {
+  background-color: #3b3054;
+  border-radius: 10px;
+  display: none;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 25px 25px;
+  width: 350px;
+}
+
+.main .hero-container .mobile-container #nav-link {
+  color: white;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  padding-top: 25px;
+}
+
+.main .hero-container .mobile-container #nav-line {
+  margin-top: 20px;
+}
+
+.main .hero-container .mobile-container #login {
+  cursor: pointer;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  padding-top: 20px;
+}
+
+.main .hero-container .mobile-container #signup-button {
+  color: white;
+  cursor: pointer;
+  background-color: #2acfcf;
+  border: none;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 25px;
+  padding: 10px 0px;
+  width: 100%;
+}
+
 .main .hero-container #hero-image {
+  display: block;
   position: relative;
   left: 25px;
   height: 300px;
@@ -223,6 +283,24 @@
 
 .main .footer .footer-list #item-1 {
   margin-top: 15px !important;
+}
+
+.main .footer .icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.main .footer .icon-container i {
+  color: white;
+  padding: 0px 10px;
+  font-size: 25px;
 }
 
 .heading {

@@ -11,6 +11,7 @@
 {
     background-color: $whiteColor;
     position: relative;
+    overflow-x: hidden;
     width: 100vw;
     .navbar
     {
@@ -19,9 +20,20 @@
         justify-content: space-between;
         padding: 30px 20px 30px;
         width: 375px;
-        #hamburger-icon
+        #hamburger-icon-open
         {
             color: $textColor;
+            display: block;
+            font-size: 25px;
+            &:hover
+            {
+                cursor: pointer;
+            }
+        }
+        #hamburger-icon-close
+        {
+            color: $textColor;
+            display: none;
             font-size: 25px;
             &:hover
             {
@@ -35,8 +47,56 @@
         margin-bottom: 125px;
         position: relative; 
         width: 375px;
+        .mobile-container
+        {
+            background-color: $containerColor;
+            border-radius: 10px;
+            display: none;
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0px 25px 25px;
+            width: 350px;
+            #nav-link
+            {
+                color: $whiteColor;
+                cursor: pointer;
+                font-family: $fontFamily;
+                font-size: 1rem;
+                font-weight: $fontWeight2;
+                padding-top: 25px;
+            }
+            #nav-line
+            {
+                margin-top: 20px;
+            }
+            #login
+            {
+                cursor: pointer;
+                color: $whiteColor;
+                font-family: $fontFamily;
+                font-size: 1rem;
+                font-weight: $fontWeight2;
+                padding-top: 20px;
+            }
+            #signup-button
+            {
+                color: $whiteColor;
+                cursor: pointer;
+                background-color: $buttonColor;
+                border: none;
+                border-radius: 20px;
+                font-family: $fontFamily;
+                font-size: 1rem;
+                font-weight: $fontWeight2;
+                margin-top: 25px;
+                padding: 10px 0px;
+                width: 100%;
+            }
+        }
         #hero-image
         {
+            display: block;
             position: relative;
             left: 25px;
             height: 300px;
@@ -184,6 +244,20 @@
             #item-1
             {
                 margin-top: 15px !important;
+            }
+        }
+        .icon-container
+        {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 25px;
+            width: fit-content;
+            i
+            {
+                color: $whiteColor;
+                padding: 0px 10px;
+                font-size: 25px;
             }
         }
     }
