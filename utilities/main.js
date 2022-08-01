@@ -26,7 +26,11 @@ const toggleClose = () =>
 
 const urlInput = document.getElementById("url");
 
-const shortenUrl = () =>
+const shortenUrl = async () =>
 {
     const urlString = urlInput.value;
+    fetch('https://api.shrtco.de/v2/shorten?url=pornhub.html')
+        .then(res => res.json())
+        .then(data => console.log(data));
+
 }
