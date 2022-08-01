@@ -29,7 +29,7 @@ const urlInput = document.getElementById("url");
 const shortenUrl = async () =>
 {
     const urlString = urlInput.value;
-    fetch('https://api.shrtco.de/v2/shorten?url=pornhub.html')
+    fetch('https://api.shrtco.de/v2/shorten?url=google.com')
         .then(res => res.json())
         .then(data => console.log(data));
 
