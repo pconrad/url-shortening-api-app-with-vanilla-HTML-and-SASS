@@ -29,8 +29,21 @@ const urlInput = document.getElementById("url");
 const shortenUrl = async () =>
 {
     const urlString = urlInput.value;
-    fetch('https://api.shrtco.de/v2/shorten?url=google.com')
-        .then(res => res.json())
-        .then(data => console.log(data));
-
+    let urlResponse = await fetch(`https://api.shrtco.de/v2/shorten?url=${urlString}`)
+    try 
+    {
+        if(!(urlResponse.ok))
+        {
+            const message = `An error has occurred: ${urlResponse.status}`;
+            throw new Error(message);
+        }
+    }
+    catch(error)
+    {
+        console.log(error);
+        return;
+    }
+    let urlJson = await urlResponse.json();
+    let urlObject = urlJson.result;
+    console.log(urlObject);
 }
