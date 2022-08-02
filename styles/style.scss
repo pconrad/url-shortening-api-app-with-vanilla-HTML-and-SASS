@@ -348,3 +348,43 @@
 {
     top: -50px;
 }
+
+.url-container
+{
+    align-items: center;
+    background-color: $whiteColor;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50px;
+    margin-bottom: 25px;
+    padding: 10px 20px;
+    width: 350px;
+    #link
+    {
+        color: black;
+    }
+    .url-flex-container
+    {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        #copy-button
+        {
+            background-color: $containerColor;
+            border: none;
+            border-radius: 5px;
+            color: $whiteColor;
+            font-family: $fontFamily;
+            font-weight: $fontWeight1;
+            padding: 5px 20px;
+        }
+        #short-link
+        {
+            color: $buttonColor;
+            margin-right: 10px;
+        }
+    }
+}

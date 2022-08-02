@@ -25,6 +25,7 @@ const toggleClose = () =>
 }
 
 const urlInput = document.getElementById("url");
+const statsSection = document.getElementById("stats-section")
 
 const shortenUrl = async () =>
 {
@@ -47,3 +48,12 @@ const shortenUrl = async () =>
     let urlObject = urlJson.result;
     console.log(urlObject);
 }
+
+
+
+const createUrlBlock = () =>
+{
+    console.log(statsSection.children)
+}
+
+createUrlBlock();
