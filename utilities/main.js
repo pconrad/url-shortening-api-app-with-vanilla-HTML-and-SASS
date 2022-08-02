@@ -30,9 +30,8 @@ const listOfUrls = document.getElementById("url-list")
 const error = document.getElementById("error")
 let firstLink = true;
 
-const validateUrl = (urlContainer) =>
+const validateUrl = (urlString) =>
 {
-    let urlString = urlInput.value;
     if(urlString.includes(".com") || urlString.includes(".net") || 
     urlString.includes(".gov") || urlString.includes(".org"))
     {
@@ -43,29 +42,32 @@ const validateUrl = (urlContainer) =>
         {
             urlInputContainer.style.border = "none";
             error.innerHTML = "";
+            return true;
         }
         else
         {
             urlInputContainer.style.border = "1px solid red";
             error.innerHTML = "Please add a valid link";
+            return false;
         }
     }
      else if(urlString === "")
     {
         urlInputContainer.style.border = "1px solid red";
         error.innerHTML = "Please add a link";
+        return false;
     }
     else
     {
         urlInputContainer.style.border = "1px solid red";
         error.innerHTML = "Please add a valid link";
+        return false;
     }
 }
 
 const shortenUrl = async () =>
 {
     let urlString = urlInput.value;
-    
     let urlResponse = await fetch(`https://api.shrtco.de/v2/shorten?url=${urlString}`)
     try 
     {
@@ -87,6 +89,10 @@ const shortenUrl = async () =>
 let clone = document.getElementById("url-container").cloneNode(true);
 const createUrlBlock = (urlObject) =>
 {
+    if(!(validateUrl(urlObject.original_link)))
+    {
+        return;
+    }
     let urlBlock = document.getElementById("url-container")
     if(firstLink)
     {
