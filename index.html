@@ -57,18 +57,21 @@
 
     
 
-    <section class="advanced-stats" id="stats-section">
+    <section class="advanced-stats">
       <div class="api-container">
-        <div class="url-input-container">
+        <div class="url-input-container" id="url-input-container">
           <input type="text" class="url-input" id="url" placeholder="Shorten a link here...">
         </div>
-        <button class="shorten-button" id="shorten-button" onclick="shortenUrl()">
+        <button class="shorten-button" id="shorten-button" onclick="shortenUrl();validateUrl();">
           Shorten It!
         </button>
+        <p class="body" id="error">
+          
+        </p>
     </div>
 
-    <div class="url-list">
-      <div class="url-container">
+    <div class="url-list" id="url-list">
+      <div class="url-container" id="url-container">
         <p class="body" id="link">
           google.com
         </p>
@@ -76,7 +79,7 @@
           <p class="body" id="short-link">
             xd.com 
           </p>
-          <button class="copy-button" id="copy-button">
+          <button class="copy-button" id="copy-button" onclick="copyLink(this)">
             Copy
           </button>
         </div>

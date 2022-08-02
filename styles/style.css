@@ -387,9 +387,7 @@
           align-items: center;
   background-color: white;
   border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -403,6 +401,7 @@
 
 .url-container #link {
   color: black;
+  font-size: 10px;
 }
 
 .url-container .url-flex-container {
@@ -418,10 +417,11 @@
 }
 
 .url-container .url-flex-container #copy-button {
-  background-color: #3b3054;
+  background-color: #2acfcf;
   border: none;
   border-radius: 5px;
   color: white;
+  cursor: pointer;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   padding: 5px 20px;
@@ -429,6 +429,16 @@
 
 .url-container .url-flex-container #short-link {
   color: #2acfcf;
+  font-size: 10px;
   margin-right: 10px;
+}
+
+#error {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
 }
 /*# sourceMappingURL=style.css.map */

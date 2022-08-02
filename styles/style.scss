@@ -354,7 +354,7 @@
     align-items: center;
     background-color: $whiteColor;
     border-radius: 5px;
-    display: flex;
+    display: none;
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
@@ -365,6 +365,7 @@
     #link
     {
         color: black;
+        font-size: 10px;
     }
     .url-flex-container
     {
@@ -373,10 +374,11 @@
         justify-content: center;
         #copy-button
         {
-            background-color: $containerColor;
+            background-color: $buttonColor;
             border: none;
             border-radius: 5px;
             color: $whiteColor;
+            cursor: pointer;
             font-family: $fontFamily;
             font-weight: $fontWeight1;
             padding: 5px 20px;
@@ -384,7 +386,17 @@
         #short-link
         {
             color: $buttonColor;
+            font-size: 10px;
             margin-right: 10px;
         }
     }
+}
+
+#error
+{
+    align-self: flex-start;
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: $fontWeight1;
 }
