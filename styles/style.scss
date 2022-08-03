@@ -164,6 +164,7 @@ body
                         font-family: $fontFamily;
                         padding-left: 10px;
                         outline: none;
+                        width: 90%;
                         &::placeholder
                         {
                             color: $textColor;
@@ -520,6 +521,7 @@ body
                 {
                     align-items: center;
                     display: flex;
+                    justify-content: space-between;
                     .url-input-container
                     {
                         width: 750px;

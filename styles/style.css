@@ -179,6 +179,7 @@ body {
   font-family: "Poppins", sans-serif;
   padding-left: 10px;
   outline: none;
+  width: 90%;
 }
 
 .main .advanced-stats .api-container .url-input-container .url-input::-webkit-input-placeholder {
@@ -563,6 +564,9 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .main .advanced-stats .api-container .api-desktop-flex-container .url-input-container {
     width: 750px;
