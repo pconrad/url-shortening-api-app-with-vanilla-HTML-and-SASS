@@ -15,10 +15,33 @@
 <body>
   <section class="main">
     <section class="navbar">
-      <div class="navbar-container">
+      <div class="mobile-navbar-container">
         <img src="./images/logo.svg" alt="logo" class="logo" id="mobile-logo">
         <i class="fa-solid fa-bars" id="hamburger-icon-open" onclick="toggleOpen()"></i>
         <i class="fa-solid fa-bars" id="hamburger-icon-close" onclick="toggleClose()"></i>
+      </div>
+
+      <div class="desktop-navbar-container">
+        <div class="desktop-navbar-left-flex-container">
+          <img src="./images/logo.svg" alt="logo" class="logo" id="desktop-logo">
+          <p class="body" id="navlink">
+            Features 
+          </p>
+          <p class="body" id="navlink">
+            Pricing 
+          </p>
+          <p class="body" id="navlink">
+            Resources 
+          </p>
+        </div>
+        <div class="desktop-navbar-right-flex-container">
+          <p class="body" id="login">
+            Login
+          </p>
+          <button class="sign-up-button" id="sign-up-button">
+            Sign Up
+          </button>
+        </div>
       </div>
     </section>
 
@@ -43,28 +66,30 @@
         Sign Up
       </button>
      </div>
-      <p class="heading" id="hero-heading">
-        More than just shorter links
-      </p>
-      <p class="body" id="hero-body">
-        Build your brand’s recognition and get detailed insights 
-        on how your links are performing.
-      </p>
-      <button class="get-started-button" id="get-started-button">
-        Get Started
-      </button>
+      <div class="hero-desktop-flex-container">
+        <p class="heading" id="hero-heading">
+          More than just shorter links
+        </p>
+        <p class="body" id="hero-body">
+          Build your brand’s recognition and get detailed insights 
+          on how your links are performing.
+        </p>
+        <button class="get-started-button" id="get-started-button-2">
+          Get Started
+        </button>
+      </div>
     </section>
-
-    
 
     <section class="advanced-stats">
       <div class="api-container">
-        <div class="url-input-container" id="url-input-container">
-          <input type="text" class="url-input" id="url" placeholder="Shorten a link here...">
+        <div class="api-desktop-flex-container">
+          <div class="url-input-container" id="url-input-container">
+            <input type="text" class="url-input" id="url" placeholder="Shorten a link here...">
+          </div>
+          <button class="shorten-button" id="shorten-button" onclick="shortenUrl()">
+            Shorten It!
+          </button>
         </div>
-        <button class="shorten-button" id="shorten-button" onclick="shortenUrl()">
-          Shorten It!
-        </button>
         <p class="body" id="error">
           
         </p>
@@ -93,43 +118,45 @@
         Track how your links are performing across the web with our 
         advanced statistics dashboard.
       </p>
-      <div class="stat-container">
-        <div class="image-container">
-          <img src="./images/icon-brand-recognition.svg" alt="stat image" class="stat-image">
+      <div class="stats-flex-container">
+        <div class="stat-container">
+          <div class="image-container">
+            <img src="./images/icon-brand-recognition.svg" alt="stat image" class="stat-image">
+          </div>
+          <p class="heading" id="stat-heading">
+            Brand Recognition
+          </p>
+          <p class="body" id="stat-body">
+            Boost your brand recognition with each click. Generic links don’t 
+            mean a thing. Branded links help instil confidence in your content.
+          </p>
         </div>
-        <p class="heading" id="stat-heading">
-          Brand Recognition
-        </p>
-        <p class="body" id="stat-body">
-          Boost your brand recognition with each click. Generic links don’t 
-          mean a thing. Branded links help instil confidence in your content.
-        </p>
-      </div>
-      <div class="line" id="line-1"></div>
-      <div class="stat-container" id="container-2">
-        <div class="image-container">
-          <img src="./images/icon-detailed-records.svg" alt="stat image" class="stat-image">
+        <div class="line" id="line-1"></div>
+        <div class="stat-container" id="container-2">
+          <div class="image-container">
+            <img src="./images/icon-detailed-records.svg" alt="stat image" class="stat-image">
+          </div>
+          <p class="heading" id="stat-heading">
+            Detailed Records
+          </p>
+          <p class="body" id="stat-body">
+            Gain insights into who is clicking your links. Knowing when and where 
+            people engage with your content helps inform better decisions.
+          </p>
         </div>
-        <p class="heading" id="stat-heading">
-          Detailed Records
-        </p>
-        <p class="body" id="stat-body">
-          Gain insights into who is clicking your links. Knowing when and where 
-          people engage with your content helps inform better decisions.
-        </p>
-      </div>
-      <div class="line" id="line-2"></div>
-      <div class="stat-container" id="container-3">
-        <div class="image-container">
-          <img src="./images/icon-fully-customizable.svg" alt="stat image" class="stat-image">
+        <div class="line" id="line-2"></div>
+        <div class="stat-container" id="container-3">
+          <div class="image-container">
+            <img src="./images/icon-fully-customizable.svg" alt="stat image" class="stat-image">
+          </div>
+          <p class="heading" id="stat-heading">
+            Fully Customizable
+          </p>
+          <p class="body" id="stat-body">
+            Improve brand awareness and content discoverability through customizable 
+            links, supercharging audience engagement.
+          </p>
         </div>
-        <p class="heading" id="stat-heading">
-          Fully Customizable
-        </p>
-        <p class="body" id="stat-body">
-          Improve brand awareness and content discoverability through customizable 
-          links, supercharging audience engagement.
-        </p>
       </div>
     </section>
 
@@ -190,6 +217,7 @@
         <i class="fa-brands fa-instagram"></i>
       </div>
     </section>
+
   </section>
   <script src="./utilities/main.js"></script>
 </body>

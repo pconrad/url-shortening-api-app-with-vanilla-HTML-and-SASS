@@ -3,11 +3,6 @@ const mobileNavContainer = document.getElementById("mobile-container")
 const hamburgerIconOpen = document.getElementById("hamburger-icon-open");
 const hamburgerIconClose = document.getElementById("hamburger-icon-close");
 
-console.log(mobileHero)
-console.log(mobileNavContainer)
-console.log(hamburgerIconOpen)
-console.log(hamburgerIconClose)
-
 const toggleOpen = () =>
 {
     hamburgerIconOpen.style.display = "none";
