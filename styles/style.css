@@ -626,6 +626,7 @@ body {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     text-align: left;
+    width: 1024px;
   }
   .main .footer .logo {
     margin: 0px;
