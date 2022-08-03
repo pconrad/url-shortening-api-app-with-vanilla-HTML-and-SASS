@@ -590,25 +590,31 @@ body
         }
         .footer
         {
-            align-items: flex-start;
-            display: flex;
-            justify-content: space-around;
-            text-align: left;
-            width: 1024px;
-            .logo
+            width: 100%;
+            .footer-container
             {
-                margin: 0px;
-                padding-right: 80px;
-            }
-            .footer-list
-            {
-                list-style: none;
-                margin-top: 0px;
-            }
-            .icon-container
-            {
-                margin: 0px;
-            }
+                align-items: flex-start;
+                display: flex;
+                justify-content: space-around;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: left;
+                width: 1024px;
+                .logo
+                {
+                    margin: 0px;
+                    padding-right: 80px;
+                }
+                .footer-list
+                {
+                    list-style: none;
+                    margin-top: 0px;
+                }
+                .icon-container
+                {
+                    margin: 0px;
+                }
+            }   
         }
     }
 

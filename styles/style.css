@@ -617,6 +617,9 @@ body {
     font-size: 2rem;
   }
   .main .footer {
+    width: 100%;
+  }
+  .main .footer .footer-container {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -625,18 +628,20 @@ body {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
     text-align: left;
     width: 1024px;
   }
-  .main .footer .logo {
+  .main .footer .footer-container .logo {
     margin: 0px;
     padding-right: 80px;
   }
-  .main .footer .footer-list {
+  .main .footer .footer-container .footer-list {
     list-style: none;
     margin-top: 0px;
   }
-  .main .footer .icon-container {
+  .main .footer .footer-container .icon-container {
     margin: 0px;
   }
   #get-started-button-2 {
