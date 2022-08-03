@@ -31,7 +31,6 @@ const validateUrl = (urlString) =>
     urlString.includes(".gov") || urlString.includes(".org"))
     {
         urlString = urlString.slice(urlString.indexOf("."), urlString.length);
-        console.log(urlString)
         if(urlString === ".com" || urlString === ".net" ||
         urlString === ".gov" || urlString === ".org")
         {
@@ -112,3 +111,6 @@ const copyLink = (button) =>
     button.innerHTML = "Copied!";
     button.style.backgroundColor = "hsl(257, 27%, 26%)";
 }
+
+const shortenButton = document.getElementById("shorten-button");
+shortenButton.addEventListener("click", shortenUrl);
