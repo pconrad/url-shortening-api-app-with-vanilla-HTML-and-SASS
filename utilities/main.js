@@ -34,6 +34,7 @@ const validateUrl = (urlString) =>
         if(urlString === ".com" || urlString === ".net" ||
         urlString === ".gov" || urlString === ".org")
         {
+            console.log(urlString);
             urlInputContainer.style.border = "none";
             error.innerHTML = "";
             return true;
@@ -62,6 +63,7 @@ const validateUrl = (urlString) =>
 const shortenUrl = async () =>
 {
     let urlString = urlInput.value;
+    console.log(urlString);
     let urlResponse = await fetch(`https://api.shrtco.de/v2/shorten?url=${urlString}`)
     try 
     {
