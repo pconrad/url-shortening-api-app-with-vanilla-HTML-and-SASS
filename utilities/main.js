@@ -60,27 +60,6 @@ const validateUrl = (urlString) =>
     }
 }
 
-const shortenUrl = async () =>
-{
-    let urlString = urlInput.value;
-    console.log(urlString);
-    let urlResponse = await fetch(`https://api.shrtco.de/v2/shorten?url=${urlString}`)
-    try 
-    {
-        if(!(urlResponse.ok))
-        {
-            const message = `An error has occurred: ${urlResponse.status}`;
-            throw new Error(message);
-        }
-    }
-    catch(error)
-    {
-        return;
-    }
-    let urlJson = await urlResponse.json();
-    let urlObject = urlJson.result;
-    createUrlBlock(urlObject);
-}
 
 let clone = document.getElementById("url-container").cloneNode(true);
 const createUrlBlock = (urlObject) =>
@@ -105,6 +84,29 @@ const createUrlBlock = (urlObject) =>
     urlBlock.children[1].children[0].innerHTML = urlObject.short_link;
     urlBlock.style.display = "flex";
 }
+
+const shortenUrl = async () =>
+{
+    let urlString = urlInput.value;
+    console.log(urlString);
+    let urlResponse = await fetch(`https://api.shrtco.de/v2/shorten?url=${urlString}`)
+    try 
+    {
+        if(!(urlResponse.ok))
+        {
+            const message = `An error has occurred: ${urlResponse.status}`;
+            throw new Error(message);
+        }
+    }
+    catch(error)
+    {
+        return;
+    }
+    let urlJson = await urlResponse.json();
+    let urlObject = urlJson.result;
+    createUrlBlock(urlObject);
+}
+
 
 const copyLink = (button) =>
 {
