@@ -88,8 +88,10 @@ const createUrlBlock = (urlObject) =>
 const shortenUrl = async () =>
 {
     let urlString = urlInput.value;
-    console.log(urlString);
+    console.log("urlString=",urlString);
     let urlResponse = await fetch(`https://api.shrtco.de/v2/shorten?url=${urlString}`)
+    console.log("urlResponse=",urlResponse);
+
     try 
     {
         if(!(urlResponse.ok))
