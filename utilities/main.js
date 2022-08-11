@@ -91,6 +91,7 @@ const shortenUrl = async () =>
     console.log("urlString=",urlString);
     let urlResponse = await fetch(`https://api.shrtco.de/v2/shorten?url=${urlString}`)
     console.log("urlResponse=",urlResponse);
+    console.log("JSON.stringify(urlResponse)=",JSON.stringify(urlResponse));
 
     try 
     {
